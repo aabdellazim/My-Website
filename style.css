@@ -1,0 +1,390 @@
+body{
+    font-family: 'Cairo Play', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start Global Attribute */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+::selection{
+    background-color: #000000;
+    color: var(--mainColor);
+}
+:root{
+    --mainColor:#0057ff;
+    --secondColor:white;
+    --mainBackground:#ffffff;
+    --mainHover:#7d8e7e;
+}
+/* End Global Attribute */
+
+
+
+/* Start header */
+
+header {
+    background-color:#000000;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+.logo {
+    color:var(--mainColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation > a {
+    color:var(--mainColor);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation > a:hover {
+    color:var(--mainHover);
+}
+/* End header */
+
+/* Start Section */
+    /* Start Main Section */
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    /* attachment not work good in iphone */
+}
+.main h2 {
+    color: var(--secondColor);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    display: inline-block;
+    margin-top:10px;
+    color: var(--mainColor);
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3 {
+    color: var(--secondColor);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+    margin-bottom:30px ;
+}
+.main-btn {
+    color:var(--secondColor);
+    background-color: var(--mainColor);
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1.4px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+}
+.main-btn:hover {
+    background-color: var(--mainHover);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social-icons a {
+    display: inline-block;
+    color: var(--secondColor);
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+    /* End Main Section */
+    /* Start Cards Section */
+.title {
+    display:flex;
+    justify-content: center;
+    color: var(--mainColor);
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 25px;
+    margin-left: 25px;
+    transition: ease-in 0.7s;
+    -webkit-transition: ease-in 0.7s;
+    -moz-transition: ease-in 0.7s;
+    -ms-transition: ease-in 0.7s;
+    -o-transition: ease 0.7s;
+}
+.card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.icon {
+    color: var(--mainColor);
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3 {
+    color: var(--mainColor);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin:10px;
+}
+    /* End Cards Section */
+    /* Start Project Section */
+.projects {
+    background-color: black;
+}
+.project .content{
+    margin-top: 30px;
+}
+.project_card {
+    background-color:var(--mainBackground);
+    border: 1px solid white;
+    min-height: 14em;
+    width: 22em;
+    /* كانت 23 بس صغرتها عشان تناسب */
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 10px;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+}
+.project_card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.project_img img {
+    width: 100%;
+}
+.project_card:hover .project_img {
+    opacity: 0.9;
+}
+.project_info {
+    padding: 1em;
+}
+.project_category {
+    font-size: 0.8em;
+    color: #000000;
+}
+.project_title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more_details {
+    color: #000000;
+}
+.project_card:hover .more_details{
+    color:var(--mainColor);
+}
+    /*  End Project Section */
+    /* Start Contact Section */
+.contact .icon {
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p {
+    font-size: 1.5em;
+}
+.contact_p a {
+    color: black ;
+}
+.card:hover a {
+    color: blue;
+}
+    /* End Contact Section */
+/* End Section */
+/* Start Footer */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer_title span {
+    color:#3a6cf4;
+}
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+.footer .social-icons:hover a {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    color: white;
+}
+/* خلي بالك مكتبتش خواص كتير للفوتر لانه واخد كلاسات من فوق بنفس الاسم */
+/* End Footer */
+
+/* Start Media Query */
+@media (max-width:1300px){
+    .card{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:1023px){
+    .projects .content {
+        display: flex;
+        justify-content: center;
+    }
+    .project_card {
+        width: 80%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a {
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2 {
+        font-size: 1em;
+    }
+    .main_content h2 {
+        font-size: 1em;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    .main_content h3 {
+        font-size: 1.6em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+    .project_card {
+        width: calc(100% - 20%);
+    }
+    body{
+        font-size: 12px;
+    }
+    .main_content h2{
+        font-size: .8em;
+    }
+    .main-content h2{
+        font-size: .8em;
+    }
+    .main_content h3{
+        font-size: 1.4em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    header .navigation {
+        display: none;
+    }
+}
